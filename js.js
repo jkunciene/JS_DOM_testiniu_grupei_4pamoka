@@ -111,6 +111,14 @@ function addToDo(){
     //    trynimo funkcija
     function deleteTask(row){
         rezultatams.removeChild(row);
+       
+        // jei lentele lieka tuscia, neberodyk jos
+            console.log(rezultatams.innerText==='')
+            if(rezultatams.innerText===''){
+                lentele.className = 'invisible';
+            }
+            
+        
     }
 
     } else {
